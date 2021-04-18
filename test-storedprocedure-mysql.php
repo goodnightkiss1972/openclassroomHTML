@@ -14,7 +14,7 @@ catch(Exception $e)
 // Si tout va bien, on peut continuer
 
 // On récupère tout le contenu de la table jeux_video
-$reponse = $bdd->query('SELECT * FROM jeux_video');
+$reponse = $bdd->query('CALL ps_affiche_liste_jeux_video;');
 
 // On affiche chaque entrée une à une
 while ($donnees = $reponse->fetch())
