@@ -13,7 +13,6 @@
         if ($mode == "visiteur") {
             echo "<li><a href=\"acceuil.php\">Bienvenue chez Bubbles !</a></li>";
             echo "<li><a href=\"connexion_form.php\">S'inscrire / Se connecter</a></li>";
-//            echo "<li><a href=\"connexion_form.php\"  onclick=\"open('connexion_form.php', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;\" >S'inscrire / Se connecter</a></li>";
         }
         else {
             echo "<li><a href=\"profil.php\">Bienvenue ";
