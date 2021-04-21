@@ -28,7 +28,7 @@ if (isset($_POST['connexion']) && $_POST['connexion'] == 'Connexion') {
         $is_mot_de_passe_valide = password_verify($_POST['pwd'], $resultat_requete[0]['mot_de_passe']); // ici [0] sert a preciser qu'on remonte sur le premier (et seul) enregistrement
         if ($is_mot_de_passe_valide) {
             $_SESSION['login'] = $_POST['login']; // ici on admet le login saisi dans le formulaire precedent pour le loger dans la session
-            header('Location: espace-membre.php'); // qu'est ce que ça fait ? une redirection vers l'espace membre je suppose
+            header('Location: acceuil.php');
             exit();
         }
         else {
