@@ -32,6 +32,10 @@ if (isset($_POST['connexion']) && $_POST['connexion'] == 'Connexion') {
         $is_mot_de_passe_valide = password_verify($_POST['pwd'], $resultat_requete[0]['mot_de_passe']); // ici [0] sert a preciser qu'on remonte sur le premier (et seul) enregistrement
         if ($is_mot_de_passe_valide) {
             $_SESSION['login'] = $_POST['login']; // ici on admet le login saisi dans le formulaire precedent pour le loger dans la session
+            // si on veut que le site se souvienne de notre login la prochaine fois, on a coche la case correspondante
+//            if (isset($_POST['souvenir']) && $POST['souvenir'] == "oui") {
+//                setcookie('dernier_login', $_POST['login'], time() = 1*3600, null, null, false, true);
+//            }
             header('Location: acceuil.php');
             exit();
         }

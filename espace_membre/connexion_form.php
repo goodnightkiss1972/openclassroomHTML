@@ -17,6 +17,9 @@
                         <td>Mot de Passe</td><td><input type="password" name="pwd" value=""></td>
                     </tr>
                     <tr>
+                        <td>Se souvenir de moi<input type="checkbox" name="souvenir" value="oui" checked></td>
+                    </tr>
+                    <tr>
                         <td><input type="submit" name="connexion" value="Connexion"></td>
                     </tr>
                 </tbody>
