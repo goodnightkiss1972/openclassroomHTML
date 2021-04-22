@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : lun. 19 avr. 2021 à 19:16
+-- Généré le : jeu. 22 avr. 2021 à 08:57
 -- Version du serveur :  10.4.17-MariaDB
 -- Version de PHP : 8.0.2
 
@@ -33,8 +33,7 @@ CREATE TABLE `t_utilisateur` (
   `mot_de_passe` varchar(255) NOT NULL,
   `date_inscription` datetime NOT NULL,
   `pseudonyme` varchar(25) NOT NULL,
-  `code_verification` varchar(255) NOT NULL,
-  `valide` int(11) NOT NULL
+  `pouvoir` enum('admin','public','prive') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --

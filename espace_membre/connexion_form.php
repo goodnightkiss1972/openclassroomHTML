@@ -21,7 +21,7 @@
                     </tr>
                 </tbody>
             </table>
-            <br/>Pas encore de compte ?&nbsp<a href="inscription.php">S'inscrire</a><br/><br/>
+            <br/>Pas encore de compte ?&nbsp<a href="inscription_form.php">S'inscrire</a><br/><br/>
         </form>
     </body>
 </html>

@@ -2,7 +2,11 @@
 // inclusion des variables de connexion - a transformer avec PDO pour l'ensemble de la relation avec la BDD
 include ("connect.php");
 if (isset($_POST['connexion']) && $_POST['connexion'] == 'Connexion') {
-    if ((isset($_POST['login']) && !empty($_POST['login'])) && (isset($_POST['pwd']) && !empty($_POST['pwd']))) { 
+    if (
+        (isset($_POST['login']) && !empty($_POST['login'])) && // verifie que le login a ete renseigne
+        (isset($_POST['pwd']) && !empty($_POST['pwd'])) && // verifie que le mot de passe a ete renseigne
+        (filter_var($_POST['login'], FILTER_VALIDATE_EMAIL)) // verifie que le login est bien une adresse email
+    ) { 
 
     // on se connecte a la BDD pour verifier si le login n'existe pas deja
     try {
@@ -54,7 +58,7 @@ if (isset($_POST['connexion']) && $_POST['connexion'] == 'Connexion') {
     }
     }
     else {
-        $erreur = 'Erreur de saisie - <br/>Au moins un des champs login ou mot de passe est vide !';
+        $erreur = 'Erreur de saisie - <br/>Au moins un des champs login ou mot de passe est vide ou invalide !';
         echo $erreur;
         echo "<br/><a href=\"acceuil.php\">Acceuil</a>";
         exit();
