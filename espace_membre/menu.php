@@ -11,7 +11,7 @@
     <li><a href="acceuil.php" class="actif">Mes Bubbles</a></li>
     <?php
         if ($mode == "visiteur") {
-            echo "<li><a href=\"acceuil.php\">Bienvenue chez Bubbles !</a></li>";
+            echo "<li><a href=\"profil.php\">Bienvenue chez Bubbles !</a></li>";
             echo "<li><a href=\"connexion_form.php\">S'inscrire / Se connecter</a></li>";
         }
         else {
