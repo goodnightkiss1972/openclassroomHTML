@@ -11,7 +11,7 @@
     <body>
         <?php
             include ("menu.php");
-            echo ("Page de gestion des utilisateurs");
+            echo ("<div><em>Page de gestion des utilisateurs</em></div>");
             $requete = "SELECT id_utilisateur, login_mail, date_inscription, pseudonyme, pouvoir 
                         FROM t_utilisateur 
                         ORDER BY pseudonyme ASC";
@@ -21,7 +21,7 @@
                 exit();
             }
             if (mysqli_num_rows($resultat) > 0) {
-                echo "<table>";
+                echo "<div><table>";
                 echo "<tr><td>Login</td><td>Pseudonyme</td><td>Inscrit le</td><td>Pouvoir</td><td>Action</td>";
                 $ligne = mysqli_fetch_assoc($resultat);
                 while ($ligne) {
@@ -37,7 +37,7 @@
                     echo "</tr>";
                     $ligne = mysqli_fetch_assoc($resultat);
                 }
-                echo "</table>";
+                echo "</table></div>";
             }
         ?>
     </body>
