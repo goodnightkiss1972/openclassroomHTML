@@ -18,6 +18,7 @@
             echo "<li><a href=\"profil.php\">Bienvenue ";
             echo $_SESSION['login']; echo " - Consulter votre profil";
             echo "</a></li>";
+            echo "<li><a href=\"utilisateur_liste.php\">Gerer utilisateurs</a></li>";
             echo "<li><a href=\"deconnexion.php\">Se deconnecter</a></li>";
         }
     ?>
