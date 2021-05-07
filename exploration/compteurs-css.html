@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="utf8" />
+    <!--<link rel="stylesheet" href="exploration.css" type="text/css">-->
+    <style>
+        body {
+            counter-reset: compteurh1 compteurh2;
+        }
+
+        h1::before {
+            counter-increment: compteurh1;
+            content: "Titre "counter(compteurh1) " ";
+            counter-set: compteurh2 0;
+        }
+
+        h2::before {
+            counter-increment: compteurh2;
+            content: "Sous titre "counter(compteurh1) "."counter(compteurh2) " ";
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>titre a</h1>
+    <h2>sous titre 1</h2>
+    <h2>sous titre 2</h2>
+    <h1>deuxième titre</h1>
+    <h2>sous titre 3</h2>
+    <h2>sous titre 4</h2>
+    <h2>sous titre 3</h2>
+    <h1>deuxième titre</h1>
+    <h2>sous titre 4</h2>
+</body>
+
+</html>
