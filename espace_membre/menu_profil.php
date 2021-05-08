@@ -8,7 +8,7 @@
     <body>
         <?php
             include ("menu.php");
-            include ("publications.php");
+            include ("profil.php");
         ?>
     </body>
 </html>

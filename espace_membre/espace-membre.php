@@ -1,6 +1,9 @@
 <?php
 // demarrage de la session (toujours avant toute balise HTML)
-session_start();
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
 // si le login n'est pas present dans les variables super globales alors c'est que l'identification n'a pas ete etablie
 if (!isset($_SESSION['login'])) {
     header ('Location: index.php');
