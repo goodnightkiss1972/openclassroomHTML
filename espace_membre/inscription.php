@@ -11,7 +11,7 @@ if (isset($_POST['inscription']) && $_POST['inscription'] == 'Inscription') {
         if ($_POST['mdp1'] != $_POST['mdp2']) {
             $erreur = 'Les deux mots de passe ne sont pas identiques';
             echo $erreur;
-            echo "<br/><a href=\"acceuil.php\">Acceuil</a>";
+            echo "<br/><a href=\"accueil.php\">Acceuil</a>";
             exit();
         }
         else {
@@ -51,13 +51,13 @@ if (isset($_POST['inscription']) && $_POST['inscription'] == 'Inscription') {
                     // puisqu'on s'est inscrit on peut aussi connecter l'utilisateur si on veut
                     session_start();
                     $_SESSION['login'] = $_POST['login']; // ici on admet le login saisi dans le formulaire precedent pour le loger dans la session
-                    echo "<br/><a href=\"acceuil.php\">Acceuil</a>";
+                    echo "<br/><a href=\"accueil.php\">Acceuil</a>";
                     exit();
                 }
             else {
                 $erreur = 'Echec de l\'inscription, veuillez essayer a nouveau s\'il vous plait.';
                 echo $erreur;
-                echo "<br/><a href=\"acceuil.php\">Acceuil</a>";
+                echo "<br/><a href=\"accueil.php\">Acceuil</a>";
             }
         }
     }

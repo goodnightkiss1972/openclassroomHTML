@@ -30,7 +30,7 @@
 
     if ($resultat_requete['login_mail'] != $_SESSION['login']) {
         echo ("<br/>Erreur : le login n'a pas pu être trouvé");
-        echo ("<br/>Veuillez revenir à l'<a href=\"acceuil.php\"acceuil du site</a> s'il vous plait>");
+        echo ("<br/>Veuillez revenir à l'<a href=\"accueil.php\"acceuil du site</a> s'il vous plait>");
         exit();
     }
     else {

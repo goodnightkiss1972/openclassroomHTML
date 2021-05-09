@@ -1,19 +1,10 @@
 <?php
 include("connect_mysqli.php");
 ?>
-<html>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Acceuil</title>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="bubbles.css">
-</head>
+<div class="central publication"><h1>Page de gestion de vos amis</div>
 
-<body>
-    <?php
-    include("menu.php");
-    echo ("<div><em>Page de gestion des utilisateurs</em></div>");
+<?php
     $requete = "SELECT id_utilisateur, login_mail, date_inscription, pseudonyme, pouvoir 
                         FROM t_utilisateur 
                         ORDER BY pseudonyme ASC";
@@ -23,7 +14,7 @@ include("connect_mysqli.php");
         exit();
     }
     if (mysqli_num_rows($resultat) > 0) {
-        echo "<div><table>";
+        echo "<div class=\"central\"><table>";
         echo "<tr><td>Login</td><td>Pseudonyme</td><td>Inscrit le</td><td>Pouvoir</td><td>Action</td>";
         $ligne = mysqli_fetch_assoc($resultat);
         while ($ligne) {
@@ -41,7 +32,4 @@ include("connect_mysqli.php");
         }
         echo "</table></div>";
     }
-    ?>
-</body>
-
-</html>
+?>
