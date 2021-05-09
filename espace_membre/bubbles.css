@@ -1,6 +1,25 @@
 body {
     font-family: "Trebuchet MS";
 }
+
+h1 {
+    color: #ed2794;
+}
+
+.publication article {
+    background-color: aqua;
+}
+
+.profil article {
+    background-color: lightpink;
+}
+
+.central {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .menu {
     display: flex;                /* Transformation en flexbox */
     padding:0;                    /* Suppression des marges internes */

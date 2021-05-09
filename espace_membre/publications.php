@@ -3,7 +3,8 @@ if (!isset($_SESSION)) {
     session_start();
 }
 ?>
-<div id="publications">
+<div class="central publication">
+    <h1>Voici mes publications</h1>
     <article>Article 1</article>
     <article>Article 2</article>
     <article>Article 3</article>

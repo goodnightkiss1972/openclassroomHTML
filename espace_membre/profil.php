@@ -34,14 +34,10 @@
         exit();
     }
     else {
-        echo "Voici votre profil";
-        echo "<br/>";
-        echo "<br/>";
-        echo $resultat_requete['login_mail'];
-        echo "<br/>";
-        echo "Vous êtes inscrit depuis le ".$resultat_requete['date_inscription'];
-        echo "<br/>";
-        echo "Et votre pouvoir est ".$resultat_requete['pouvoir'];
-        echo "<br/>";
+        echo "<div class=\"central profil\">";
+        echo "<h1>Voici votre profil</h1>";
+        echo "<article>".$resultat_requete['login_mail']."</article>";
+        echo "<article>Vous êtes inscrit depuis le ".$resultat_requete['date_inscription']."</article>";
+        echo "<article>Et votre pouvoir est ".$resultat_requete['pouvoir']."</article>";
     }
 ?>
