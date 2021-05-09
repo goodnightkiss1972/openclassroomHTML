@@ -7,10 +7,11 @@
 </head>
 
 <body>
-    <?php
-    include("menu.php");
-    include("profil.php");
-    ?>
+
+    <header><?php include("menu.php"); ?></header>
+
+    <?php include("profil.php"); ?>
+
 </body>
 
 </html>

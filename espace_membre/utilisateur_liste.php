@@ -32,4 +32,5 @@ include("connect_mysqli.php");
         }
         echo "</table></div>";
     }
+    mysqli_free_result($resultat);
 ?>
