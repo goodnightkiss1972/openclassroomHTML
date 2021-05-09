@@ -1,4 +1,4 @@
 <?php
-    header ('Location: acceuil.php');
-    exit();
+header ('Location: acceuil.php');
+exit();
 ?>

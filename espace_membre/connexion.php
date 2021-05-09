@@ -68,6 +68,3 @@ if (isset($_POST['connexion']) && $_POST['connexion'] == 'Connexion') {
         exit();
     }
 }
-
-
-?>

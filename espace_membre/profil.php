@@ -44,5 +44,3 @@
         echo "Et votre pouvoir est ".$resultat_requete['pouvoir'];
         echo "<br/>";
     }
-?>
-

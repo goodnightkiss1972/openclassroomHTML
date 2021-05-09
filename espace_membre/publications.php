@@ -1,8 +1,7 @@
 <?php
-    if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    } 
+if (!isset($_SESSION)) {
+    session_start();
+}
 ?>
 <div id="publications">
     <article>Article 1</article>
@@ -15,4 +14,3 @@
     <article>Article 8</article>
     <article>Article 9</article>
 </div>
-
