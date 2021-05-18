@@ -10,7 +10,7 @@
 
     <header><?php include("menu.php"); ?></header>
 
-    <?php include("utilisateur_liste.php"); ?>
+    <?php include("utilisateur_liste_avec_fonction.php"); ?>
 
 </body>
 

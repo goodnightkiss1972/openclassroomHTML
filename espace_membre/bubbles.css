@@ -56,3 +56,16 @@ h1 {
     color: #ffe843;
     border-color: #ffe843;
 }
+
+.bubble_table {
+    border-style: solid;
+    border-color: #ed2794;
+}
+
+.bubble_table tr:nth-child(odd) {
+    background-color: #1ABC9C;
+}
+
+.bubble_table tr:nth-child(1) {
+    background-color: #ffe843;
+}
