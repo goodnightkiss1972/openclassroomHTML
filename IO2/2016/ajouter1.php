@@ -10,5 +10,3 @@ if (isset($_POST['TabidArticles']) && !empty($_POST['TabidArticles'])) {
 else {
     echo "Aucun produit n'a été ajouté.";
 }
-
-?>
