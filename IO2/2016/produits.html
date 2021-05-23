@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Produits</title>
+        <style>
+            .div {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="ajouter1.php" method="post">
+            <div>
+                <article>
+                    <p>article 01</p>
+                    description de l'article 01<br/>
+                    <img src="photo01.jpg" />
+                    <p>01.50</p>
+                    <input type="checkbox" name="idArticle[]" value="id1"/>
+                </article>
+            </div>
+            <hr/>
+            <div>
+                <article>
+                    <p>article 02</p>
+                    description de l'article 02<br/>
+                    <img src="photo02.jpg" />
+                    <p>02.50</p>
+                    <input type="checkbox" name="idArticle[]" value="id2"/>
+                </article>
+            </div>
+            <input type="submit" name="ajouterFavoris" value="Ajouter aux favoris">
+       </form>
+    </body>
+</html>
